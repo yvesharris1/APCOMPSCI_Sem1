@@ -1,0 +1,38 @@
+AP Comp Sci Notes: Introduction to Programming
+
+1. Computer Programs are Just Text Files
+	~all you need is a simple text editor to write a Java program
+	~the written code is called an assembly code and it's stored in a 
+	regular text file with a .java extension
+
+2. Setting up the JDK
+	~the JDK contains the files necessary to "compile" and "execute"
+	your code
+
+	+example of code+
+	
+	public class name
+	{
+		public static voide main (String[]args)
+		{
+			System.out.println("--------");
+		}
+	}
+
+3. ASCII Art
+
+	~ASCII art is part of the graphic design world that is used to project 
+	art through text based visual art in computers
+	~ASCII art came out to be as it is because old printers lacked the ability
+	to project any reasonable art
+	~ASCII art can be seen earlier than 1939
+	~ASCII art also has different forms of font
+	~Another form of visual art through text that predated ASCII art is typewriter art
+	~ASCII art became popular in the late 1970s
+
+4. Escape Characters 
+	
+	~each character in coding has a significance and meaning
+	~when a character is in front of a "\" it could potentially be an escape character
+	~for example, "\t" means tab and in coding will project a large gap or space
+	~escape characters in a way are short cuts
