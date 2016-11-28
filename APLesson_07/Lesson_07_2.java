@@ -9,11 +9,11 @@ public class Lesson_07_2
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a sentence: ");
 		sentence = kb.nextLine();
-		
-		while(top < sentence.length()-1)
+
+		while(sentence.indexOf(" ") >= 0)
 		{
-			System.out.println(sentence.charAt(top));
-			top++;
+			sentence = sentence.substring(0 , sentence.indexOf(" ")) + sentence.substring(sentence.indexOf(" ") + 1);
 		}
+		System.out.println("Without spaces... " + sentence);
 	}
 }
