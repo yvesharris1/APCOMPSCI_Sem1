@@ -1,4 +1,7 @@
-public class Toyota implements Location
+import java.util.ArrayList;
+import java.util. Arrays;
+
+public class Toyota extends Car
 {
 	private String s;
 	private double coordinatex;
@@ -11,23 +14,27 @@ public class Toyota implements Location
 	
 	public Toyota(String i)
 	{
-		s = i;
+		super();
+		ArrayList<String> coordinatez = new ArrayList<>(Arrays.asList(i.split(", ")));
+		double x = Double.parseDouble(coordinatez.get(0));
+		double y = Double.parseDouble(coordinatez.get(1));
+		Move(x,y);
+	}
+	
+	public void Move(double x, double y)
+	{
+		coordinatex += x;
+		coordinatey += y;
 	}
 	
 	public int getID()
 	{
-		return (int)(Math.random() * 999999 + 1);
+		return ID;
 	}
 	
 	public double[] getLoc()
 	{
-		String sr = s;
-		String [] separate = s. split(", ");
-		coordinatex = Double.valueOf(separate[0]).doubleValue();
-		coordinatey = Double.valueOf(separate[1]).doubleValue();
-		double location[] = new double[2];
-		location[0] = coordinatex;
-		location[1] = coordinatey;
+		double[] location = {coordinatex, coordinatey};
 		return location; 
 	}
 }

@@ -1,4 +1,4 @@
-public class Honda implements Location
+public class Honda extends Car
 {
 	private double coordinatex;
 	private double coordinatey;
@@ -11,12 +11,20 @@ public class Honda implements Location
 	
 	public Honda(double[] coord)
 	{
+		super();
 		coordinatex = coord[0];
 		coordinatey = coord[1];
 	}
+	
+	public void Move(double x, double y)
+	{
+		coordinatex += x;
+		coordinatey += y;
+	}
+	
 	public int getID()
 	{
-		return (int)(Math.random() * 999999 + 1);
+		return ID;
 	}
 	
 	public double[] getLoc()

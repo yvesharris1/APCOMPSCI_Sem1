@@ -1,23 +1,31 @@
-public class GMC implements Location
+public class GMC extends Car
 {
-	private int coordinatex;
-	private int coordinatey;
+	private double coordinatex;
+	private double coordinatey;
 	
 	public GMC()
 	{
+		super();
 		coordinatex = 0;
 		coordinatey = 0;
 	}
 	
-	public GMC(int x, int y)
+	public GMC(double x, double y)
 	{
+		super();
 		coordinatex = x;
 		coordinatey = y;
 	}
 	
+	public void Move(double x, double y)
+	{
+		coordinatex += x;
+		coordinatey += y;
+	}
+	
 	public int getID()
 	{
-		return (int)(Math.random() * 999999 + 1);
+		return ID;
 	}
 
 	public double[] getLoc()
