@@ -6,11 +6,6 @@ public class Magpie2
 		return "Hello, let's talk.";
 	}
 	
-	/** getResponse() method
-	 * ===========================================
-	 * 	Gives a response to a user statement
-	 *  @param statement (the user statement)
-	 * 	@return a response based on the rules given */
 	public String getResponse(String statement)
 	{
 		String response = "";
